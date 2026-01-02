@@ -30,7 +30,7 @@ body {
     position: relative;
     padding: 30px;
     /* width: 300px; */
-    width: clamp(1vw, 420px, 95%);
+    width: clamp(1vw, 420px, 80%);
     /* width: 95%; */
     text-align: center;
     background: #e0e5ec;
