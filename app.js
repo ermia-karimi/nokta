@@ -95,7 +95,7 @@ function preparePDFButton() {
 
     setTimeout(() => {
         pdfBtn.disabled = false;
-        pdfBtn.innerText = "دانلود / اشتراک PDF";
+        pdfBtn.innerText = "اشتراک PDF";
         pdfBtn.onclick = createPDF;
     }, 20000); // 20 ثانیه
 }
