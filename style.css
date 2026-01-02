@@ -14,8 +14,8 @@ body {
     display: grid;
     place-items: center;
     grid-template-columns: repeat(1, 1fr);
-    /*width: clamp(1vw, 100vw, 100vw);*/
-    /*height: clamp(1vh, 100vh, 100vh);*/
+    width: clamp(1vw, 100vw, 100vw);
+    height: clamp(1vh, 100vh, 100vh);
     background: #e0e5ec;
     font-family: v;
     overflow-y: auto;
