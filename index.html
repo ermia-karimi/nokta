@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> nokta </title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="manifest" href="manifest.json">
+
+</head>
+
+<body>
+    <div class="all">
+
+        <div id="mainPage" class="mainPage">
+            <h1> نکتا </h1>
+            <p style="opacity:.6;font-size:18px"> چند ثانیه تا راحت درس خوندن </p>
+
+            <textarea id="inputText"
+                placeholder=" متن رو وارد کن مشتی .... &#10; &#10; برای استفاده بهتر و دقیق تر از استفاده پشت سرهم و زیادی  ./؛\{}()* ... پرهیز کنید و استفاده عدد بدون متن "></textarea>
+
+            <div class="slider-box">
+                <label>
+                    شدت هایلایت شدن جملات :
+                    <b><span id="percentLabel">55%</span></b>
+                </label>
+                <input type="range" id="percent" min="20" max="90" value="55">
+            </div>
+
+            <button class="btn" onclick="processText()"> نکات رو جدا کنم ✨ </button>
+        </div>
+
+    </div>
+
+    <div id="highlightPage">
+        <button id="backBtn" class="backBtn" onclick="goBack()">بازگشت</button>
+        <button id="pdfBtn" class="pdfBtn" disabled>در حال آماده‌سازی PDF...</button>
+        <div id="content"></div>
+    </div>
+
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
