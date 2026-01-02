@@ -105,14 +105,14 @@ function createPDF() {
 
     const opt = {
         margin: 0.6,
-        filename: "highlighted_notes.pdf",
+        filename: "nokta.pdf",
         html2canvas: { scale: 2 },
         pagebreak: { mode: ["avoid-all", "css"] },
         jsPDF: { unit: "in", format: "a4", orientation: "portrait" }
     };
 
     html2pdf().set(opt).from(element).outputPdf("blob").then(blob => {
-        const file = new File([blob], "highlighted_notes.pdf", { type: "application/pdf" });
+        const file = new File([blob], "nokta.pdf", { type: "application/pdf" });
         if (navigator.canShare && navigator.canShare({ files: [file] })) {
             navigator.share({ files: [file] }).catch(() => { });
         } else {
