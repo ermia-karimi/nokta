@@ -106,7 +106,26 @@ button:hover {
 }
 
 input[type=range] {
-    width: 100%
+    /* -webkit-appearance: none; */
+    width: 100%;
+    background: transparent;
+}
+
+/* خط اسلایدر */
+input[type="range"]::-webkit-slider-runnable-track {
+    height: 6px;
+    background: #000000;
+    border-radius: 3px;
+}
+
+/* دکمه */
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 18px;
+    height: 18px;
+    background: #fff;
+    border-radius: 50%;
+    margin-top: -6px;
 }
 
 #highlightPage {
